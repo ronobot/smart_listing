@@ -159,6 +159,7 @@ class window.SmartListing
   
   # Trigger AJAX request to reload the list
   reload: () =>
+    @fadeLoading()
     $.rails.handleRemote(@container)
   
   params: (value) =>
